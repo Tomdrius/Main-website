@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<a href="{% url 'home' %}" class="display-1" style="color: yellow; text-decoration: none; margin: 10vh;"> Projects </a>
+<br><br>
+<div class="row">
+{% for project in projects %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            {% if project.image %}
+                <img class="card-img-top" src="{{project.image.url}}" onclick="location.href='{% url 'project_detail' project.pk %}'">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.short_description }}</p>
+                <a href="{{ project.githublink }}" target="_blank" rel="noopener noreferrer" style="word-break: break-all;">{{ project.githublink }} </a>
+                <br><br>
+                <a href="{% url 'project_detail' project.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

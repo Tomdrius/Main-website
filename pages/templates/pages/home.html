@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <h1>Programmer focused on task completion</h1>
+    <h3><em>I write code that exactly fulfills the assigned task</em></h3>
+    <br>
+    <div class="container d-flex align-items-center">
+    <h5 class="ms-3">As a budding programmer, I am on a continuous learning journey, driven by a genuine passion for the world of coding. Though I am in the early stages of my programming career, I approach each task with utmost dedication and seriousness.</h5>
+    {% load static %}
+    <img id='portrait' src="{% static 'images/portrait.jpg' %}" alt="Portrait" onclick="location.href='{% url "project_index" %}'" width="15%">
+    <h6 class="ms-3">I believe in the power of constant improvement and take pride in my commitment to delivering results that reflect my evolving skills and dedication to the craft.</h6>
+    </div>
+    <br>
+    <img id='backdrop' src="{% static 'images/main.jpg' %}" alt="Backdrop" onclick="location.href='{% url "project_index" %}'" width='95%'>
+{% endblock page_content %}
