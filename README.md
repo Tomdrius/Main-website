@@ -52,9 +52,13 @@ Następnie odwiedź http://localhost:8000/ w swojej przeglądarce.
 ## Struktura projektu
 
 `personal_portfolio/`: Główny katalog aplikacji Django.
+
 `pages/`: Katalog strony głównej.
+
 `projects/`: Katalog poszczególnych stron projektu.
+
 `templates/`: Szablony HTML dla widoków.
+
 
 ## Kontakt
 Jeśli masz pytania lub chcesz się skontaktować, napisz do mnie na kontowowag@gmail.com
