@@ -13,10 +13,14 @@ Then, visit http://localhost:8000/ in your web browser.
 
 ## Project Structure
 
-personal_portfolio/: Main Django application directory.
-pages/: Directory for the homepage.
-projects/: Directory for individual project pages.
-templates/: HTML templates for views.
+`personal_portfolio/`: Main Django application directory.
+
+`pages/`: Directory for the homepage.
+
+`projects/`: Directory for individual project pages.
+
+`templates/`: HTML templates for views.
+
 
 ## Contact
 
