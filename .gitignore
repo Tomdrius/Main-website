@@ -1,7 +1,7 @@
-# venv
+venv
 # static
-# .env
-# *\__pycache__
-# *\migrations
-# *\__init__.py
-# db.sqlite3
+.env
+*\__pycache__
+*\migrations
+*\__init__.py
+db.sqlite3
